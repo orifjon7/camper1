@@ -8,14 +8,17 @@ import icon from './assests/grommet-icons_form-next.svg'
 import { H1 } from './navbarStyle'
 import { P } from './navbarStyle'
 import Hamburger from './assests/icon-park-outline_hamburger-button.svg'
+import {NavbarMiddle} from './navbarStyle'
+import { Hamburgers }  from './navbarStyle'
 const NavbarComponent = () => {
   return (
     <Navbar>
 <NavbarRight >
-<img src={Hamburger} alt="Hamburger" />
+<Hamburgers><img src={Hamburger} alt="Hamburger" /></Hamburgers>
 <Link to={"/"}>
 <H1>Camper</H1></Link>
 </NavbarRight>
+<NavbarMiddle>
 <NavbarRight>
 <Link to={"/Motor"}>
 <P>Motor</P>
@@ -28,13 +31,13 @@ const NavbarComponent = () => {
 <Link to={"/Tuning"}>
 <P>Tuning</P></Link>
 <img src={icon} alt="icon" />
-<Link to={"UsedComponent"}>
+<Link to={"/UsedCar"}>
 <P>Used Car</P>
 </Link>
 <img src={icon} alt="icon" />
-<Link to={"CampingComponent"}>
+<Link to={"/CampingPlace"}>
 <P>Camping Place</P></Link>
-</NavbarRight>
+</NavbarRight></NavbarMiddle>
 <NavbarRight>
 <img src={cart} alt="cart" />
 <img src={user} alt="user" />

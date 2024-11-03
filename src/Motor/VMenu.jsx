@@ -6,26 +6,150 @@ import {CarWrapperRight} from './style'
 import {CarWrapperR} from './style'
 import {StarText} from './style'
 import Star from '../assests/bx_bxs-star.svg';
-import {ButtonR} from './style'
+import {CarColumn} from './style'
+import {StarTextS} from './style'
 const VMenuComponent = () => {
   return (
     
     <CarWrapperRight>
+  
+<CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
     <CarWrapperR>
      <img src={firstCar} alt="firstCar" />
-    <h1>Name of the car</h1>
+     <div>
+    <CarColumn>
     <CarWrTextR>
-      <p>Brand name</p>
-      <StarText><img src={Star} alt="star"/>
-      <p>5.3</p></StarText>
-      
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
     </CarWrTextR>
-    <h2>250 $</h2>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
     <ButtonWrR>
-      <ButtonR>Order</ButtonR>
-      <ButtonR>Compare</ButtonR>
-   </ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
     </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+    <CarWrapperR>
+     <img src={firstCar} alt="firstCar" />
+     <div>
+    <CarColumn>
+    <CarWrTextR>
+    <h1>Name of the car</h1>
+    <p>Brand name</p>
+    </CarWrTextR>
+    <StarText> <h2>250 $</h2>
+      <StarTextS><img src={Star} alt="star" width={10}/>
+      <p>5.3</p></StarTextS>
+     </StarText></CarColumn>
+    <ButtonWrR>
+      <button>Order</button>
+      <button>Compare</button>
+   </ButtonWrR></div>
+    </CarWrapperR>
+   
     </CarWrapperRight>
   )
 }

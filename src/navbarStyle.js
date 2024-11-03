@@ -9,6 +9,12 @@ justify-content:space-evenly;
 
 align-items: center;
 width:100%;
+@media only screen and (max-width: 834px){display:flex;
+
+};
+@media only screen and (max-width: 414px){display:none;
+
+};
 `
 export const H1 =styled.h1`
 color: var(--blue, #006DAB);
@@ -25,10 +31,38 @@ font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+
+
 `
 
 export const NavbarRight = styled.div`
 display:flex;
 gap:20px;
-align-items: center;
+align-items:center;
+
+`
+export const NavbarMiddle = styled.div`
+display:flex;
+align-items:center;
+
+@media only screen and (max-width: 834px){display:none;
+
+};
+@media only screen and (max-width: 414px){display:none;
+
+};
+`
+export const Hamburgers = styled.div`
+display:flex;
+align-items:center;
+
+@media only screen and (max-width: 1366px){display:none;
+
+};
+@media only screen and (max-width: 834px){display:flex;
+
+};
+@media only screen and (max-width: 414px){display:none;
+
+};
 `
