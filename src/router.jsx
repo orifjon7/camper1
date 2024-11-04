@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import CaravanComponent from './Caravan';
-import TuningComponent from './Tuning';
+import CaravanComponent from './caravan/Caravan';
+import TuningComponent from './tuning/Tuning';
 import UsedComponent from './used-car';
 import CampingPlaceComponent from './camping';
 import FooterComponent from './Footer';

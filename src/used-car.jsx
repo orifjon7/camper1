@@ -33,7 +33,7 @@ const UsedComponent = () => {
     return (
       <>
       <CaravanImage>
-      <p>Home / Motors</p>
+      <p>Home / Used Car</p>
        <h3>Our ranges</h3>
        <h1>Used Car</h1>
       </CaravanImage>

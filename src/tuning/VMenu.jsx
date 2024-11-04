@@ -1,19 +1,19 @@
 import React from 'react'
-import {ButtonWrR} from './style'
-import {CarWrTextR} from './style'
-import firstCar from '../assests/22 1-3.svg';
-import {CarWrapperRight} from './style'
-import {CarWrapperR} from './style'
-import {StarText} from './style'
+import {ButtonWrR} from '../Motor/style'
+import {CarWrTextR} from '../Motor/style'
+import firstCar from '../assests/first car.svg';
+import {CarWrapperRight} from '../Motor/style'
+import {CarWrapperR} from '../Motor/style'
+import {StarText} from '../Motor/style'
 import Star from '../assests/bx_bxs-star.svg';
-import {CarColumn} from './style'
-import {StarTextS} from './style'
-import { motordata } from '../mock/motor';
+import {CarColumn} from '../Motor/style'
+import {StarTextS} from '../Motor/style'
+import { tuning } from '../mock/tuning';
 const VMenuComponent = () => {
-  console.log(motordata)
+  console.log(tuning)
   return (
     <CarWrapperRight>
-          {motordata.map((value, index) =>{
+          {tuning.map((value, index) =>{
   return (
     
 <CarWrapperR key={value.id}>

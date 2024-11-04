@@ -1,27 +1,27 @@
 
 import React,  { useState } from 'react'
-import HmenuIcon from './assests/clarity_grid-view-solid.svg'
-import VmenuIcon from './assests/ic_round-view-list.svg'
-import HMenuComponent from './Motor/hMenu'
-import VMenuComponent from './Motor/VMenu'
+import HmenuIcon from '../assests/clarity_grid-view-solid.svg'
+import VmenuIcon from '../assests/ic_round-view-list.svg'
+import HMenuComponent from './hMenu'
+import VMenuComponent from './VMenu'
 import {TuningImage} from './TuningStyle'
-import {MainWrapper} from './Motor/style'
-import {Filter} from './Motor/style'
-import {SideText} from './Motor/style'
-import {CheckBox} from './Motor/style'
-import icon from './assests/grommet-icons_form-next.svg'
-import {MainFilter} from './Motor/style'
-import {LeftBar} from './Motor/style'
-import { LeftBarText } from './Motor/style'
-import {RightBarText} from './Motor/style'
-import {DivBetween} from './Motor/style'
-import car1 from './assests/Rectangle 705.svg'
-import car2 from './assests/c a.svg'
-import car3 from './assests/22 1.svg'
-import { Button } from './Motor/style'
-import { CarWr } from './Motor/style'
-import {Leftnavinput} from './Motor/style'
-import {ButtonLast} from './Motor/style'
+import {MainWrapper} from '../Motor/style'
+import {Filter} from '../Motor/style'
+import {SideText} from '../Motor/style'
+import {CheckBox} from '../Motor/style'
+import icon from '../assests/grommet-icons_form-next.svg'
+import {MainFilter} from '../Motor/style'
+import {LeftBar} from '../Motor/style'
+import { LeftBarText } from '../Motor/style'
+import {RightBarText} from '../Motor/style'
+import {DivBetween} from '../Motor/style'
+import car1 from '../assests/Rectangle 705.svg'
+import car2 from '../assests/c a.svg'
+import car3 from '../assests/22 1.svg'
+import { Button } from '../Motor/style'
+import { CarWr } from '../Motor/style'
+import {Leftnavinput} from '../Motor/style'
+import {ButtonLast} from '../Motor/style'
 const TuningComponent = () => {
   const [active, setActive] = useState(true);
   function handleHmenu(){
@@ -33,7 +33,7 @@ const TuningComponent = () => {
     return (
       <>
       <TuningImage>
-      <p>Home / Motors</p>
+      <p>Home / Tuning</p>
        <h3>Our ranges</h3>
        <h1>Tuning</h1>
       </TuningImage>

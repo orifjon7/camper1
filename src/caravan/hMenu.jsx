@@ -1,23 +1,22 @@
 import React from 'react'
 import star from '../assests/bx_bxs-star.svg'
-import { CarWrapper } from './style'
-import {CarWrText} from './style'
-import {StarText} from './style'
-import {ButtonWr} from './style' 
-import {CarWrapperAll} from './style'
-import {Img1} from './style'
-import { motordata } from "../mock/motor"
-import  image1  from '../assests/c a-2.svg'
-
+import { CarWrapper } from '../Motor/style'
+import {CarWrText} from '../Motor/style'
+import {StarText} from '../Motor/style'
+import {ButtonWr} from '../Motor/style' 
+import {CarWrapperAll} from '../Motor/style'
+import {Img1} from '../Motor/style'
+import { caravandata } from "../mock/caravan"
+import car1 from '../assests/first car.svg'
 const HMenuComponent = () => {
-  console.log(motordata)
+  console.log( caravandata )
   return (
     <div>
         <CarWrapperAll>
-          {motordata.map((value, index) =>{
+          {caravandata.map((value, index) =>{
             return(
               <CarWrapper key={value.id}>
-  <Img1><img src={image1} alt="img" /></Img1>
+  <Img1><img src={car1} alt="" /></Img1>
 <h1>{value.car.name}</h1>
 <CarWrText>
   <p>{value.car.company}</p>

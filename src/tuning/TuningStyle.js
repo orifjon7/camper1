@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CarabaImg from './assests/TuningCar.png'
+import CarabaImg from '../assests/TuningCar.png'
 
 export const TuningImage = styled.div`
 background-image:url(${CarabaImg});
