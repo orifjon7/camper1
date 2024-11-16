@@ -7,7 +7,8 @@ import {ButtonWr} from './style'
 import {CarWrapperAll} from './style'
 import {Img1} from './style'
 import { motordata } from "../mock/motor"
-import  image1  from '../assests/c a-2.svg'
+import { Link } from 'react-router-dom'
+
 
 const HMenuComponent = () => {
   console.log(motordata)
@@ -16,21 +17,22 @@ const HMenuComponent = () => {
         <CarWrapperAll>
           {motordata.map((value, index) =>{
             return(
+              <Link to={`/MotorDatial/${value.id}`} style={{textDecoration:'none'}}>
               <CarWrapper key={value.id}>
-  <Img1><img src={image1} alt="img" /></Img1>
+  <Img1><img src={value.car.photo} alt="img" /></Img1>
 <h1>{value.car.name}</h1>
 <CarWrText>
   <p>{value.car.company}</p>
   <StarText><img src={star} alt="star"/>
   <p>{value.car.rate}</p></StarText>
-  
+ 
 </CarWrText>
 <h2>{value.car.cost}</h2>
 <ButtonWr>
   <button>Order</button>
   <button>Compare</button>
 </ButtonWr>
-</CarWrapper>
+</CarWrapper></Link>
             )
           })}
 

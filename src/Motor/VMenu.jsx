@@ -1,7 +1,6 @@
 import React from 'react'
 import {ButtonWrR} from './style'
 import {CarWrTextR} from './style'
-import firstCar from '../assests/22 1-3.svg';
 import {CarWrapperRight} from './style'
 import {CarWrapperR} from './style'
 import {StarText} from './style'
@@ -9,15 +8,17 @@ import Star from '../assests/bx_bxs-star.svg';
 import {CarColumn} from './style'
 import {StarTextS} from './style'
 import { motordata } from '../mock/motor';
+import { Link } from 'react-router-dom';
+import {Img1} from './style'
 const VMenuComponent = () => {
   console.log(motordata)
   return (
     <CarWrapperRight>
           {motordata.map((value, index) =>{
   return (
-    
+    <Link to={`/MotorDatial/${value.id}`} style={{textDecoration:'none'}}>
 <CarWrapperR key={value.id}>
-     <img src={firstCar} alt="firstCar" />
+    <Img1> <img src={value.car.photo} alt="firstCar" /></Img1>
      <div>
     <CarColumn>
     <CarWrTextR>
@@ -32,7 +33,7 @@ const VMenuComponent = () => {
       <button>Order</button>
       <button>Compare</button>
    </ButtonWrR></div>
-    </CarWrapperR>
+    </CarWrapperR></Link>
    
   )
 })}

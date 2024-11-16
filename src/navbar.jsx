@@ -15,27 +15,27 @@ const NavbarComponent = () => {
     <Navbar>
 <NavbarRight >
 <Hamburgers><img src={Hamburger} alt="Hamburger" /></Hamburgers>
-<Link to={"/"}>
+<Link to={"/"} style={{textDecoration:'none'}}>
 <H1>Camper</H1></Link>
 </NavbarRight>
 <NavbarMiddle>
 <NavbarRight>
-<Link to={"/Motor"}>
+<Link to={"/Motor"} style={{textDecoration:'none'}}>
 <P>Motor</P>
 </Link>
 <img src={icon} alt="icon" />
-<Link to={"/Caravan"}> 
+<Link to={"/Caravan"} style={{textDecoration:'none'}}> 
 <P>Caravan</P>
 </Link>
 <img src={icon} alt="icon" />
-<Link to={"/Tuning"}>
+<Link to={"/Tuning"} style={{textDecoration:'none'}}>
 <P>Tuning</P></Link>
 <img src={icon} alt="icon" />
-<Link to={"/UsedCar"}>
+<Link to={"/UsedCar"} style={{textDecoration:'none'}}>
 <P>Used Car</P>
 </Link>
 <img src={icon} alt="icon" />
-<Link to={"/CampingPlace"}>
+<Link to={"/CampingPlace"} style={{textDecoration:'none'}}>
 <P>Camping Place</P></Link>
 </NavbarRight></NavbarMiddle>
 <NavbarRight>

@@ -6,18 +6,20 @@ import {StarText} from '../Motor/style'
 import {ButtonWr} from '../Motor/style' 
 import {CarWrapperAll} from '../Motor/style'
 import {Img1} from '../Motor/style'
-import { tuning } from "../mock/tuning"
-import  image1  from '../assests/first car.svg'
+import { tuning }  from "../mock/tuning"
+import { Link } from 'react-router-dom'
+
 
 const HMenuComponent = () => {
   console.log(tuning)
-  return (
+  return ( 
     <div>
         <CarWrapperAll>
           {tuning.map((value, index) =>{
-            return(
+            return(<Link to={`/TuningDatial/${value.id}`} style={{textDecoration:'none'}}>
+            
               <CarWrapper key={value.id}>
-  <Img1><img src={image1} alt="img" /></Img1>
+  <Img1><img src={value.car.photo} alt="img" /></Img1>
 <h1>{value.car.name}</h1>
 <CarWrText>
   <p>{value.car.company}</p>
@@ -30,7 +32,7 @@ const HMenuComponent = () => {
   <button>Order</button>
   <button>Compare</button>
 </ButtonWr>
-</CarWrapper>
+</CarWrapper></Link>
             )
           })}
 

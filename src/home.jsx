@@ -1,35 +1,42 @@
 import React from 'react'
-
 import { Carousel } from "react-responsive-carousel";
-import Car1 from './assests/MotorBg.png';
-import Car2 from './assests/CaravanBg.png';
-import Car3 from './assests/TuningCar.png';
-import Car4 from './assests/UsedBg.png'
+import Car1 from './modal rasm/AIimage1.jpg';
+import Car2 from './modal rasm/AIimage12.jpg';
+import Car3 from './modal rasm/AIimage3.jpg';
+import Car4 from './modal rasm/AIimage4.jpg'
+import BasicModal from './modal'
+import MultiCarousel from './ MultiCarousel'
+import{Caruselimage} from './HomeStyle'
+
+
 const HomeComponent = () => {
   return (
-   
-      <Carousel autoPlay>
-                <div>
+   <>
+      <Carousel autoPlay transitionTime="1000" interval="4000" showThumbs={false} infiniteLoop={true} showStatus={false}>
+                <Caruselimage>
                     <img src={Car1}  alt="Car1"/>
-                    <p className="legend">Car 1</p>
-                </div>
-                <div>
+                   
+                </Caruselimage>
+                <Caruselimage>
                     <img src={Car2} alt="Car2"/>
-                    <p className="legend">Car 2</p>
-                </div>
-                <div>
+                  
+                </Caruselimage>
+                <Caruselimage>
                     <img src={Car3} alt="Car3"/>
-                    <p className="legend">Car 3</p>
-                </div>
-                <div>
+                   
+                </Caruselimage>
+                <Caruselimage>
                     <img src={Car4} alt="Car4"/>
-                    <p className="legend">Car 3</p>
-                </div>
+                    
+                </Caruselimage>
                 
                
              
             </Carousel>
-   
+      <MultiCarousel/>
+      <BasicModal/>
+
+            </>
   )
 }
 

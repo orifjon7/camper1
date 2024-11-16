@@ -38,39 +38,43 @@ font-weight: 700;
 line-height: normal;
   }
 `
-export const CampingPlaces = styled.div`
-display:flex;
-align-items:center;
-gap:30px;
-margin:15px;
-padding-top:60px;
-img{
-  width: 395px;
-height: 300px;
-flex-shrink: 0;
-border-radius: 10px;
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-}
-div{
-display:flex;
-flex-direction:column;
-align-items:start;
-justify-content:start;
-}
-h1{
-  color: var(--text, #373737);
+export const CampingSites=styled.div`
+display: grid;
+grid-template-areas: 'a a a';
+gap: 15px;
+justify-content: center;
+background-color: #FAFAFA;
+padding-top: 80px;
+`
+export const SitesBox=styled.div`
+padding-bottom: 15px;
+h3{
+    color: var(--text, #373737);
 font-family: Montserrat;
-font-size: 22px;
+font-size: 20px;
 font-style: normal;
 font-weight: 600;
-line-height: normal;
 }
 p{
-  color: var(--text, #373737);
+    color: var(--text, #373737);
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-top: -15px;
+}
+`
+export const SitesBackgroundImg = styled.div`
+width: 365px;
+height: 275px;
+flex-shrink: 0;
+border-radius: 10px;
+margin-bottom: -10px;
+img{
+    width: 365px;
+height: 275px;
+flex-shrink: 0;
+border-radius: 10px;
 }
 `

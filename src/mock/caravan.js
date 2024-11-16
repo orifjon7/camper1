@@ -1,9 +1,19 @@
-//import img from "../assests/ccar.svg";
+import img from './tuningimg/tuning13.jpg'
+import img1 from './tuningimg/tuning1.jpg'
+import img2 from './tuningimg/tuning2.jpg'
+import img3 from './tuningimg/tuning10.jpg'
+import img4 from './tuningimg/tuning11.jpg'
+import img5 from './tuningimg/tuning12.jpg'
+import img6 from './tuningimg/tuning13.jpg'
+import img7 from './tuningimg/tuning14.jpg'
+import img8 from './tuningimg/tuning15.jpg'
+import img9 from './tuningimg/tuning16.jpg'
+import img10 from './tuningimg/tuning17.jpg'
 export const caravandata = [
   {
     id: 1,
     car: {
-     //photo: { img },
+     photo: `${img}`,
       name: "르벤투스S+",
       cost: "90,200,000",
       type: "르노마스터",
@@ -26,7 +36,7 @@ export const caravandata = [
   {
     id: 2,
     car: {
-      photo: "path/to/photo2.jpg",
+      photo: `${img1}`,
       name: "캠프마스터 2024",
       cost: "85,000,000",
       type: "포드 트랜싯",
@@ -50,7 +60,7 @@ export const caravandata = [
   {
     id: 3,
     car: {
-      photo: "path/to/photo3.jpg",
+      photo: `${img2}`,
       name: "아웃도어 익스플로러",
       cost: "120,500,000",
       type: "벤츠 스프린터",
@@ -73,7 +83,7 @@ export const caravandata = [
   {
     id: 4,
     car: {
-      photo: "path/to/photo4.jpg",
+      photo: `${img3}`,
       name: "트래블러 프로",
       cost: "102,300,000",
       type: "현대 스타렉스",
@@ -97,7 +107,7 @@ export const caravandata = [
   {
     id: 5,
     car: {
-      photo: "path/to/photo5.jpg",
+      photo: `${img4}`,
       name: "캠핑코리아 R",
       cost: "75,300,000",
       type: "포드 트랜짓",
@@ -117,7 +127,7 @@ export const caravandata = [
   {
     id: 6,
     car: {
-      photo: "path/to/photo6.jpg",
+      photo: `${img5}`,
       name: "서바이벌 E",
       cost: "92,500,000",
       type: "메르세데스 벤츠",
@@ -137,7 +147,7 @@ export const caravandata = [
   {
     id: 7,
     car: {
-      photo: "path/to/photo7.jpg",
+      photo: `${img6}`,
       name: "어드벤처 플러스",
       cost: "101,300,000",
       type: "르노마스터",
@@ -157,7 +167,7 @@ export const caravandata = [
   {
     id: 8,
     car: {
-      photo: "path/to/photo8.jpg",
+      photo: `${img7}`,
       name: "컴포트 캠퍼",
       cost: "95,800,000",
       type: "현대 스타리아",
@@ -177,7 +187,7 @@ export const caravandata = [
   {
     id: 9,
     car: {
-      photo: "path/to/photo9.jpg",
+      photo: `${img8}`,
       name: "디스커버리 X",
       cost: "112,900,000",
       type: "피아트 듀카토",
@@ -197,7 +207,7 @@ export const caravandata = [
   {
     id: 10,
     car: {
-      photo: "path/to/photo10.jpg",
+      photo: `${img9}`,
       name: "에코 트래블러",
       cost: "88,000,000",
       type: "폭스바겐 T6",
@@ -217,7 +227,7 @@ export const caravandata = [
   {
     id: 11,
     car: {
-      photo: "path/to/photo11.jpg",
+      photo: `${img10}`,
       name: "로드 익스플로러",
       cost: "105,700,000",
       type: "벤츠 스프린터",
@@ -237,7 +247,7 @@ export const caravandata = [
   {
     id: 12,
     car: {
-      photo: "path/to/photo12.jpg",
+      photo: `${img1}`,
       name: "네이처 시리즈",
       cost: "98,500,000",
       type: "르노마스터",
@@ -257,7 +267,7 @@ export const caravandata = [
   {
     id: 13,
     car: {
-      photo: "path/to/photo13.jpg",
+      photo: `${img}`,
       name: "코지 트래블러",
       cost: "89,200,000",
       type: "폭스바겐 캘리포니아",
@@ -277,7 +287,7 @@ export const caravandata = [
   {
     id: 14,
     car: {
-      photo: "path/to/photo14.jpg",
+      photo: `${img4}`,
       name: "어반 익스플로러",
       cost: "110,000,000",
       type: "벤츠 스프린터",
@@ -297,7 +307,7 @@ export const caravandata = [
   {
     id: 15,
     car: {
-      photo: "path/to/photo15.jpg",
+      photo:`${img6}`,
       name: "모험가 T",
       cost: "103,400,000",
       type: "포드 트랜짓",
@@ -317,7 +327,7 @@ export const caravandata = [
   {
     id: 16,
     car: {
-      photo: "path/to/photo16.jpg",
+      photo: `${img7}`,
       name: "아웃백 캠프",
       cost: "97,800,000",
       type: "현대 스타렉스",
@@ -334,4 +344,304 @@ export const caravandata = [
       word4: "Heating system keeps the vehicle warm.",
     },
   },
+  { id: 17,
+    car: {
+      photo:`${img8}`,
+      name: "DS9eU+a",
+      cost: "60,000,000",
+      type: "르노마스터",
+      license: "1종 보통",
+      people: "3인",
+      date: "22년 03월",
+      company: "영남캠핑카",
+      location: "경상권",
+      rate: 4.6,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 18,
+    car: {
+      photo: `${img4}`,
+      name: "르벤투스680",
+      cost: "68,900,000",
+      type: "봉고",
+      license: "2종 보통",
+      people: "5인",
+      date: "22년 03월",
+      company: "Azure",
+      location: "경상권",
+      rate: 3.5,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 19,
+    car: {
+      photo: `${img5}`,
+      name: "DS9eU+a",
+      cost: "59,900,000",
+      type: "봉고",
+      license: "2종 보통",
+      people: "5인",
+      date: "22년 03월",
+      company: "영남캠핑카",
+      location: "경상권",
+      rate: 4.8,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 20,
+    car: {
+      photo: `${img6}`,
+      name: "르벤투스680",
+      cost: "49,000,000",
+      type: "포터",
+      license: "2종 보통",
+      people: "3인",
+      date: "22년 03월",
+      company: "Result",
+      location: "경상권",
+      rate: 4.5,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 21,
+    car: {
+      photo: `${img7}`,
+      name: "르벤투스 차박S",
+      cost: "39,000,000",
+      type: "포터",
+      license: "2종 보통",
+      people: "3인",
+      date: "22년 03월",
+      company: "영남캠핑카",
+      location: "경상권",
+      rate: 4.2,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 22,
+    car: {
+      photo: `${img8}`,
+      name: "HWC560DL",
+      cost: "61,000,000",
+      type: "포터",
+      license: "2종 보통",
+      people: " 6인",
+      date: "22년 03월",
+      company: "한울캠핑카",
+      location: "경상권",
+      rate: 4.5,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 23,
+    car: {
+      photo: `${img9}`,
+      name: "HWC620DL",
+      cost: "76,000,000",
+      type: "봉고",
+      license: "2종 보통",
+      people: "5인",
+      date: "22년 03월",
+      company: "한울캠핑카",
+      location: "경상권",
+      rate: 4.7,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 24,
+    car: {
+      photo: `${img10}`,
+      name: "르벤투스 차박S",
+      cost: "75,000,000",
+      type: "르노마스터",
+      license: "1종 보통",
+      people: "3인",
+      date: "22년 03월",
+      company: "한울캠핑카",
+      location: "경상권",
+      rate: 4.0,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    }
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 25,
+    car: {
+      photo: `${img1}`,
+      name: "ST-7",
+      cost: "77,000,000",
+      type: "르노마스터",
+      license: "1종 보통",
+      people: "5인",
+      date: "22년 03월",
+      company: "한울캠핑카",
+      location: "경상권",
+      rate: 4.3,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  {
+    id: 26,
+    car: {
+      photo: `${img3}`,
+      name: "ST-7",
+      cost: "64,000,000",
+      type: "포터",
+      license: " 2종 보통",
+      people: "6인",
+      date: "22년 03월",
+      company: "한울캠핑카",
+      location: "경상권",
+      rate: 4.6,
+      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
+      word1:
+        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
+      word2:
+        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
+      word3:
+        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
+      word4:
+        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
+    },
+    //photo: `${camp}`,
+    //photo1: `${insidecamp}`,
+    //photo2: `${insidecamp1}`,
+    //photo3: `${insidecamp2}`,
+    //photo4: `${easyaccess}`,
+    //photo5: `${heating}`,
+  },
+  
 ];

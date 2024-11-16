@@ -1,4 +1,14 @@
-import img from "../car/motorCAr/car1.png";
+import img from './tuningimg/tuning19.jpg'
+import img1 from './tuningimg/tuning1.jpg'
+import img2 from './tuningimg/tuning2.jpg'
+import img3 from './tuningimg/tuning10.jpg'
+import img4 from './tuningimg/tuning11.jpg'
+import img5 from './tuningimg/tuning12.jpg'
+import img6 from './tuningimg/tuning13.jpg'
+import img7 from './tuningimg/tuning14.jpg'
+import img8 from './tuningimg/tuning15.jpg'
+import img9 from './tuningimg/tuning16.jpg'
+import img10 from './tuningimg/tuning17.jpg'
 export const motordata = [
   {
     id: 1,
@@ -33,7 +43,7 @@ export const motordata = [
   {
     id: 2,
     car: {
-      // //photo: `${img1}`,
+       photo: `${img1}`,
       name: "ST-7",
       cost: "93,700,000",
       type: "르노마스터",
@@ -63,7 +73,7 @@ export const motordata = [
   {
     id: 3,
     car: {
-      //photo: `${img2}`,
+      photo: `${img2}`,
       name: "ACIER 790R",
       cost: "93,700,000",
       type: "르노마스터",
@@ -93,7 +103,7 @@ export const motordata = [
   {
     id: 4,
     car: {
-      //photo: `${img3}`,
+      photo: `${img3}`,
       name: "르벤투스 차박S",
       cost: "66,100,000",
       type: "르노마스터",
@@ -123,7 +133,7 @@ export const motordata = [
   {
     id: 5,
     car: {
-      //photo: `${img4}`,
+      photo: `${img4}`,
       name: "ACIER 790R",
       cost: "85,300,000",
       type: "포터",
@@ -153,7 +163,7 @@ export const motordata = [
   {
     id: 6,
     car: {
-      //photo: `${img5}`,
+      photo: `${img5}`,
       name: "ACIER 790R",
       cost: "93,700,000",
       type: "포터",
@@ -183,7 +193,7 @@ export const motordata = [
   {
     id: 7,
     car: {
-      //photo: `${img6}`,
+      photo: `${img6}`,
       name: "르벤투스680",
       cost: "62,600,000",
       type: "포터",
@@ -213,7 +223,7 @@ export const motordata = [
   {
     id: 8,
     car: {
-      //photo: `${img7}`,
+      photo: `${img7}`,
       name: "DS9eR+a",
       cost: "77,900,000",
       type: "봉고",
@@ -243,7 +253,7 @@ export const motordata = [
   {
     id: 9,
     car: {
-      //photo: `${img8}`,
+      photo: `${img8}`,
       name: "DS9eU+a",
       cost: "75,200,000",
       type: "봉고",
@@ -273,7 +283,7 @@ export const motordata = [
   {
     id: 10,
     car: {
-      //photo: `${img9}`,
+      photo: `${img9}`,
       name: "ACIER 790R",
       cost: "122,800,000",
       type: "이베코 뉴데일리",
@@ -303,7 +313,7 @@ export const motordata = [
   {
     id: 12,
     car: {
-      //photo: `${img10}`,
+    photo: `${img10}`,
       name: "르벤투스680",
       cost: "142,800,000",
       type: "이베코 뉴데일리",
@@ -333,7 +343,7 @@ export const motordata = [
   {
     id: 16,
     car: {
-      //photo: `${img11}`,
+      photo: `${img1}`,
       name: "ST-7",
       cost: "89,000,000",
       type: "봉고",
@@ -363,7 +373,7 @@ export const motordata = [
   {
     id: 20,
     car: {
-      //photo: `${img12}`,
+      photo: `${img2}`,
       name: "DS9eU+a",
       cost: "76,000,000",
       type: "르노마스터",
@@ -393,7 +403,7 @@ export const motordata = [
   {
     id: 21,
     car: {
-      //photo: `${img13}`,
+      photo: `${img}`,
       name: "DS9eU+a",
       cost: "60,000,000",
       type: "르노마스터",
@@ -423,7 +433,7 @@ export const motordata = [
   {
     id: 22,
     car: {
-      //photo: `${img14}`,
+    photo: `${img4}`,
       name: "르벤투스680",
       cost: "68,900,000",
       type: "봉고",
@@ -453,7 +463,7 @@ export const motordata = [
   {
     id: 23,
     car: {
-      //photo: `${img15}`,
+      photo: `${img5}`,
       name: "DS9eU+a",
       cost: "59,900,000",
       type: "봉고",
@@ -483,7 +493,7 @@ export const motordata = [
   {
     id: 24,
     car: {
-      //photo: `${img16}`,
+      photo: `${img6}`,
       name: "르벤투스680",
       cost: "49,000,000",
       type: "포터",
@@ -513,7 +523,7 @@ export const motordata = [
   {
     id: 25,
     car: {
-      //photo: `${img17}`,
+      photo: `${img7}`,
       name: "르벤투스 차박S",
       cost: "39,000,000",
       type: "포터",
@@ -543,7 +553,7 @@ export const motordata = [
   {
     id: 31,
     car: {
-      //photo: `${img18}`,
+      photo: `${img8}`,
       name: "HWC560DL",
       cost: "61,000,000",
       type: "포터",
@@ -573,7 +583,7 @@ export const motordata = [
   {
     id: 32,
     car: {
-      //photo: `${img19}`,
+      photo: `${img9}`,
       name: "HWC620DL",
       cost: "76,000,000",
       type: "봉고",
@@ -603,7 +613,7 @@ export const motordata = [
   {
     id: 33,
     car: {
-      //photo: `${img20}`,
+      photo: `${img2}`,
       name: "르벤투스 차박S",
       cost: "75,000,000",
       type: "르노마스터",
@@ -633,7 +643,7 @@ export const motordata = [
   {
     id: 34,
     car: {
-      //photo: `${img21}`,
+      photo: `${img1}`,
       name: "ST-7",
       cost: "77,000,000",
       type: "르노마스터",
@@ -663,7 +673,7 @@ export const motordata = [
   {
     id: 35,
     car: {
-      //photo: `${img22}`,
+      photo: `${img2}`,
       name: "ST-7",
       cost: "64,000,000",
       type: "포터",
@@ -693,7 +703,7 @@ export const motordata = [
   {
     id: 36,
     car: {
-      //photo: `${img23}`,
+      photo: `${img3}`,
       name: "르벤투스 차박S",
       cost: "64,000,000",
       type: "봉고",
@@ -723,7 +733,7 @@ export const motordata = [
   {
     id: 37,
     car: {
-      //photo: `${img24}`,
+      photo: `${img4}`,
       name: "DS9eR+a",
       cost: "77,000,000",
       type: "봉고",
@@ -753,7 +763,7 @@ export const motordata = [
   {
     id: 38,
     car: {
-      //photo: `${img25}`,
+      photo: `${img}`,
       name: "ST-7",
       cost: "64,900,000",
       type: "칸",
@@ -783,7 +793,7 @@ export const motordata = [
   {
     id: 39,
     car: {
-      //photo: `${img26}`,
+      photo: `${img6}`,
       name: "르벤투스 차박S",
       cost: "74,900,000",
       type: "봉고",
@@ -813,7 +823,7 @@ export const motordata = [
   {
     id: 40,
     car: {
-      //photo: `${img27}`,
+      photo: `${img7}`,
       name: "르벤투스 차박S",
       cost: "89,800,000",
       type: "르노마스터",
@@ -843,7 +853,7 @@ export const motordata = [
   {
     id: 45,
     car: {
-      //photo: `${img28}`,
+      photo: `${img8}`,
       name: "ST-7",
       cost: "66,093,900",
       type: "르노마스터",
@@ -873,7 +883,7 @@ export const motordata = [
   {
     id: 46,
     car: {
-      //photo: `${img29}`,
+      photo: `${img9}`,
       name: "DS9eR+a",
       cost: "68,223,900",
       type: "르노마스터",
@@ -903,7 +913,7 @@ export const motordata = [
   {
     id: 47,
     car: {
-      //photo: `${img30}`,
+      photo: `${img6}`,
       name: "르벤투스 차박S",
       cost: "69,501,900",
       type: "르노마스터",
@@ -933,7 +943,7 @@ export const motordata = [
   {
     id: 48,
     car: {
-      //photo: `${img31}`,
+      photo: `${img1}`,
       name: "트레블라인 550",
       cost: "60,342,900",
       type: "르노마스터",
@@ -963,7 +973,7 @@ export const motordata = [
   {
     id: 49,
     car: {
-      //photo: `${img32}`,
+      photo: `${img2}`,
       name: "트레블라인 550",
       cost: "69,225,000",
       type: "포터",
@@ -993,7 +1003,7 @@ export const motordata = [
   {
     id: 50,
     car: {
-      //photo: `${img33}`,
+      photo: `${img3}`,
       name: "DS9eR+a",
       cost: "67,521,000",
       type: " 포터",
@@ -1023,7 +1033,7 @@ export const motordata = [
   {
     id: 51,
     car: {
-      //photo: `${img34}`,
+      photo: `${img4}`,
       name: "트레블라인 550",
       cost: "61,770,000",
       type: "포터",
@@ -1053,7 +1063,7 @@ export const motordata = [
   {
     id: 52,
     car: {
-      //photo: `${img35}`,
+      photo: `${img5}`,
       name: "DS9eR+a",
       cost: "49,860,000",
       type: "포터",
@@ -1083,7 +1093,7 @@ export const motordata = [
   {
     id: 53,
     car: {
-      //photo: `${img36}`,
+      photo: `${img3}`,
       name: "트레블라인 550",
       cost: "68,000,000",
       type: "봉고",
@@ -1113,7 +1123,7 @@ export const motordata = [
   {
     id: 54,
     car: {
-      //photo: `${img37}`,
+      photo: `${img7}`,
       name: "트레블라인 550",
       cost: "68,000,000",
       type: "봉고",
@@ -1143,7 +1153,7 @@ export const motordata = [
   {
     id: 55,
     car: {
-      //photo: `${img38}`,
+      photo: `${img8}`,
       name: "HWC560DL",
       cost: "85,000,000",
       type: "봉고",
@@ -1173,7 +1183,7 @@ export const motordata = [
   {
     id: 90,
     car: {
-      //photo: `${img39}`,
+      photo: `${img9}`,
       name: "DS9eR+a",
       cost: "79,900,000",
       type: "포터",
@@ -1203,7 +1213,7 @@ export const motordata = [
   {
     id: 91,
     car: {
-      //photo: `${img40}`,
+      photo: `${img10}`,
       name: "HWC560DL",
       cost: "68,000,000",
       type: "포터",
@@ -1233,7 +1243,7 @@ export const motordata = [
   {
     id: 92,
     car: {
-      //photo: `${img41}`,
+      photo: `${img4}`,
       name: "HWC620DL",
       cost: "62,000,000",
       type: "르노마스터",
@@ -1263,7 +1273,7 @@ export const motordata = [
   {
     id: 93,
     car: {
-      //photo: `${img42}`,
+      photo: `${img2}`,
       name: "DS9eR+a",
       cost: "58,300,000",
       type: "르노마스터",
@@ -1293,7 +1303,7 @@ export const motordata = [
   {
     id: 95,
     car: {
-      //photo: `${img43}`,
+      photo: `${img3}`,
       name: "HWC620DL",
       cost: "121,000,000",
       type: "피아트 듀카토",
@@ -1323,7 +1333,7 @@ export const motordata = [
   {
     id: 96,
     car: {
-      //photo: `${img44}`,
+      photo: `${img4}`,
       name: "DS9eR+a",
       cost: "139,000,000",
       type: "피아트 듀카토",

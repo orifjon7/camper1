@@ -53,12 +53,10 @@ align-items:center;
 };
 `
 export const Hamburgers = styled.div`
-display:flex;
+display:none;
 align-items:center;
 
-@media only screen and (max-width: 1366px){display:none;
 
-};
 @media only screen and (max-width: 834px){display:flex;
 
 };
