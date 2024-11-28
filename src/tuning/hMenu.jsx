@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import star from '../assests/bx_bxs-star.svg'
 import { CarWrapper } from '../Motor/style'
 import {CarWrText} from '../Motor/style'
@@ -8,14 +8,23 @@ import {CarWrapperAll} from '../Motor/style'
 import {Img1} from '../Motor/style'
 import { tuning }  from "../mock/tuning"
 import { Link } from 'react-router-dom'
-
+import {InputWr} from '../Motor/style'
 
 const HMenuComponent = () => {
   console.log(tuning)
+  const [SearchData, setSearchData]  = useState("")
+  
+const searchDataList = 
+tuning.filter((data)=>data.car.name.includes(SearchData))
   return ( 
     <div>
+      <InputWr><input type="text" placeholder='FIND YOUR CAMPER' 
+value={SearchData}
+onChange={(e)=>setSearchData(e.target.value)}
+/>
+</InputWr>
         <CarWrapperAll>
-          {tuning.map((value, index) =>{
+          {searchDataList.map((value, index) =>{
             return(<Link to={`/TuningDatial/${value.id}`} style={{textDecoration:'none'}}>
             
               <CarWrapper key={value.id}>

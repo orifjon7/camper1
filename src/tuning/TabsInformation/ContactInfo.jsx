@@ -1,39 +1,43 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
 import {QAwrapper} from '../TabsInfoStyle'
 import {AnswerWrapper} from '../TabsInfoStyle'
-import map from '../Motor Rasm/Screenshot_1 1.svg'
+import KakaoMap from '../../Kakao Map';
 import {MapInfo} from '../TabsInfoStyle'
 import {ContactWrapper} from '../TabsInfoStyle'
 import {InfoWrapper} from '../TabsInfoStyle'
-const style1 = { 
-    width: 390,
-    height: 50,
-    padding:1,
-    
- };
- const style2 = { 
-    width: 390,
-    height: 50,
-    padding:1,
- };
- const style3 ={
-    width: 390,
-    height: 120,
-    padding:1,
- }
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import KakaoMap from '../../Kakao Map';
+const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_7l9xfdg', 'template_xbolusb', form.current, {
+        publicKey: 'mPpzZ_FLkfvcyaOUA',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 const ContactInfo = () => {
   return (
-    <QAwrapper>
+    <ContactWrapper>
          <Box
       component="form"
       sx={{ '& .MuiTextField-root': { m: 1, width: '25ch' } }}
       noValidate
       autoComplete="off"
     >
-<ContactWrapper>
-<img src={map} alt="map" />
+
+<KakaoMap/>
 <InfoWrapper>
         <MapInfo>
         <p>Phone number: <br />
@@ -45,35 +49,20 @@ const ContactInfo = () => {
 logo.uz</p>
         </MapInfo>
         </InfoWrapper>
-</ContactWrapper>
+
 </Box>
         <AnswerWrapper>
 <h4>Have you got a question</h4>
-<TextField sx={style1}
-          id="filled-multiline-flexible"
-          label="Your name"
-          multiline
-          maxRows={4}
-          variant="filled"
-        />
-             <TextField sx={style2}
-          id="filled-multiline-flexible"
-          label="Your email"
-          multiline
-          maxRows={4}
-          variant="filled"
-        /> 
-       <TextField sx={style3}
-          id="filled-multiline-static"
-          
-          multiline
-          rows={4}
-          defaultValue="Your question"
-          variant="filled"
-        /> <br />
-        <button>Send question</button>
+<form ref={form} onSubmit={sendEmail}>
+    <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" /></form>
         </AnswerWrapper>
-    </QAwrapper>
+        </ContactWrapper>
   )
 }
 

@@ -38,50 +38,50 @@ const  MultiCarousel = () => {
     <div> <Carousel responsive={responsive}>
     <MultiWrapper>
       <img src={car1} alt="car1" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+    <h1>Knaus</h1>
+    <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car2} alt="car2" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car3} alt="car3" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car4} alt="car4" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car1} alt="car1" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car2} alt="car2" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car3} alt="car3" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
     <MultiWrapper>
       <img src={car4} alt="car4" />
-    <p>Knaus</p>
-    <button>Discover the range</button>
+      <h1>Knaus</h1>
+      <button><p>Discover the range</p></button>
     <select  name="" id=""><option>Choose a model</option></select>
     </MultiWrapper>
   </Carousel></div>

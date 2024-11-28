@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import { Box } from '@mui/material';
 
 
 export default function FAQLists () {
@@ -14,14 +14,14 @@ export default function FAQLists () {
   ];
 
   return (
-    <div >
+    <Box sx={{ width: '100%', display: 'flex', flexDirection: 'column', gap: 2 }}>
       {faqs.map((question, index) => (
         <Accordion key={index}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls={`panel${index}-content`}
             id={`panel${index}-header`}
-            width='150px'
+            width='100%'
 
           >
             <Typography>{question}</Typography>
@@ -33,6 +33,6 @@ export default function FAQLists () {
           </AccordionDetails>
         </Accordion>
       ))}
-    </div>
+    </Box>
   );
 }

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import CaravanComponent from './caravan/Caravan';
 import TuningComponent from './tuning/Tuning';
 import UsedComponent from './Used Car/used-car';
-import CampingPlaceComponent from './camping';
+import CampingPlaceComponent from './camping place/camping';
 import FooterComponent from './Footer';
 import NavbarComponent from './navbar';
 import MotorComponent from '../src/Motor/index';
@@ -14,10 +14,21 @@ import FAQLists from './Motor/FAQList';
 import TuningDatial from './tuning/TuningDatial';
 import CaravanDatial from './caravan/CaravanDatial'
 import UsedCarDatial from './Used Car/UsedCarDatial'
+import LoginComponent from './log in/login'
+import RegistrateComponent from './log in/Registrate'
+import TabsMenu1 from './Motor/TabsMenu'
+import CampingDetail from './camping place/campingDetail';
+import KakaoMap from './Kakao Map/index'
 const RouterComponent = () => {
+  let location = useLocation();
+
+  const hiddenNavbar =
+  location.pathname !=="/login" && location.pathname !=="/registrate";
+
   return (
     <>
-    <NavbarComponent/>
+   {hiddenNavbar && <NavbarComponent/> }
+  
     <Routes>
         <Route path='/' element={<HomeComponent />} />
         <Route path='/Motor' element={<MotorComponent />} />
@@ -31,9 +42,15 @@ const RouterComponent = () => {
        <Route path = '/usedCar/:id' element={<UsedCarDatial />}/>
        <Route path = '/DatailButton' element= {<DatailButton/>}/>
   <Route path = '/FAQList' element={<FAQLists/>}/>
-
+<Route path = '/login' element={<LoginComponent/>}/>
+<Route path = '/registrate' element={<RegistrateComponent/>}/>
+<Route path = '/TabsMenu1' element={<TabsMenu1/>}/>
+<Route path = '/campingPlaces/:id' element={<CampingDetail />}/>
+<Route path = '/campingDetail/:id' element={<CampingDetail />}/>
+<Route path = '/KakaoMap' element={<KakaoMap/>}/>
     </Routes>
-     <FooterComponent/>
+    {hiddenNavbar && <FooterComponent/> }
+  
      </>
   )
 }

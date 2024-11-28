@@ -48,7 +48,7 @@ display:flex;
 flex-direction:column;
 padding:20px;
 width: 250px;
-height: 330px;
+height: 300px;
 
 flex-shrink: 0;
 border-radius: 20px;
@@ -118,13 +118,13 @@ export const ButtonWrR = styled.div`
 display:flex;
 justify-content:space-around;
 padding-left:20px;
-gap:30px;
+gap:50px;
 
 
 
 
 button{
-  width: 94px;
+  width: 400px;
 height: 35px;
 flex-shrink: 0;
   border-radius: 10px;
@@ -199,7 +199,7 @@ gap:7px;
 export const CarWrapperR = styled.div`
 display:flex;
 padding:15px;
-width: 955px;
+width: 1140px;
 height: 180px;
 
 
@@ -242,16 +242,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
-button{
-  width: 260px;
-  height: 35px;
-flex-shrink: 0;
-  border-radius: 10px;
-border: 1px solid var(--blue, #006DAB);
 
-/* btn sh */
-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-}
   
 @media only screen and (max-width: 834px){display:flex;
   width:100%;}
@@ -397,7 +388,8 @@ line-height: 100%;
 
 export const RightBarText = styled.div`
 display:flex;
-align-items:center;
+align-items:right;
+
 
 
 p{
@@ -537,37 +529,59 @@ grid-template-areas:"1 1 1"
 `
 
 export const MultiWrapper = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content: center;
+display: flex;
+ flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin: 0px auto;
+gap: 8px;
 img{
-  width: 290px;
+    width: 290px;
 height: 167px;
-flex-shrink: 0;
 }
-p{
-  color: var(--text, #373737);
+h1{
+    color: var(--text, #373737);
 text-align: center;
 font-family: Montserrat;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+margin-top: -3px;
+
 }
-button{
-  width: 259px;
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+width: 259px;
 height: 45px;
-flex-shrink: 0;
+background: var(--blue, #006DAB);
+margin-top: 10px;
 transform: skew(-18deg);
-background-color:#006DAB;
 color: #FFF;
 font-family: Montserrat;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+border: none;
+margin-top: -7px;
+p{
+    transform: skew(18deg);
+}}
+
+select{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border: none;
 }
+
 `
 export const SelectButton=styled.div`
 display: flex;
@@ -606,7 +620,7 @@ button{
     width: 50px;
 height: 45px;
 flex-shrink: 0;
-border-radius: 5px 0px 0px 5px;
+border-radius: 5px;
 border: 1px solid rgba(55, 55, 55, 0.30);
 background-color: white;
 }
@@ -640,5 +654,27 @@ font-style: normal;
 font-weight: 600;
 line-height: 100%; /* 18px */
 
+}
+`
+
+export const InputWr = styled.div`
+display:flex;
+align-items:center;
+justify-content:center;
+
+width:1000px;
+height:45px;
+padding-left:100px;
+
+input{
+  width:900px;
+  height:40px;
+box-shadow:10px;
+border-radius:30px;
+padding-left:30px;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
 }
 `

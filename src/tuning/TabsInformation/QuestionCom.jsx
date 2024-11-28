@@ -1,28 +1,30 @@
-
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {QuestionWrapper} from '../TabsInfoStyle'
 import {QAwrapper} from '../TabsInfoStyle'
 import {AnswerWrapper} from '../TabsInfoStyle'
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-const style1 = { 
-    width: 390,
-    height: 50,
-    padding:1,
-    
- };
- const style2 = { 
-    width: 390,
-    height: 50,
-    padding:1,
- };
- const style3 ={
-    width: 390,
-    height: 120,
-    padding:1,
- }
+    emailjs
+      .sendForm('service_7l9xfdg', 'template_xbolusb', form.current, {
+        publicKey: 'mPpzZ_FLkfvcyaOUA',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
 const QuestionComponent = () => {
   return (
     <QAwrapper>
@@ -73,29 +75,14 @@ const QuestionComponent = () => {
 </Box>
         <AnswerWrapper>
 <h4>Send a question</h4>
-<TextField sx={style1}
-          id="filled-multiline-flexible"
-          label="Your name"
-          multiline
-          maxRows={4}
-          variant="filled"
-        />
-             <TextField sx={style2}
-          id="filled-multiline-flexible"
-          label="Your email"
-          multiline
-          maxRows={4}
-          variant="filled"
-        /> 
-       <TextField sx={style3}
-          id="filled-multiline-static"
-          
-          multiline
-          rows={4}
-          defaultValue="Your question"
-          variant="filled"
-        /> <br />
-        <button>Send question</button>
+<form ref={form} onSubmit={sendEmail}>
+    <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" /></form>
         </AnswerWrapper>
     </QAwrapper>
   )

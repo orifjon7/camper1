@@ -10,6 +10,7 @@ import { P } from './navbarStyle'
 import Hamburger from './assests/icon-park-outline_hamburger-button.svg'
 import {NavbarMiddle} from './navbarStyle'
 import { Hamburgers }  from './navbarStyle'
+
 const NavbarComponent = () => {
   return (
     <Navbar>
@@ -40,7 +41,8 @@ const NavbarComponent = () => {
 </NavbarRight></NavbarMiddle>
 <NavbarRight>
 <img src={cart} alt="cart" />
-<img src={user} alt="user" />
+<Link to={"/login"} >
+<img src={user} alt="user" /></Link>
 <p>Eng</p>
 <img src={icon} alt="icon" />
 </NavbarRight>

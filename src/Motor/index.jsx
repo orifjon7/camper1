@@ -10,20 +10,15 @@ import {SideText} from './style'
 import {CheckBox} from './style'
 import {MainFilter} from './style'
 import {LeftBar} from './style'
-import { LeftBarText } from './style'
+
 import {RightBarText} from './style'
-import {DivBetween} from './style'
+
 import car1 from '../assests/Rectangle 705.svg'
 import car2 from '../assests/c a.svg'
 import car3 from '../assests/22 1.svg'
 import { Button } from './style'
 import { CarWr } from './style'
 import {ButtonLast} from './style'
-import Autocomplete from '@mui/material/Autocomplete';
-import top100Films from './top100Films';
-import TextField from '@mui/material/TextField';
-import { SelectButton } from './style'
-import Numbers from './Number'
 import{ClickButtons} from './style'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -33,7 +28,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import {LeftBarText} from './style'
 const MotorComponent = () => {
+
+
+
   const [active, setActive] = useState(true);
 function handleHmenu(){
   setActive(true);
@@ -182,27 +181,12 @@ function handleVmenu() {
  </Filter>
  <MainWrapper>
     <LeftBar>
-  <LeftBarText>
-<div><h3>Item    <span>  25.156</span></h3></div></LeftBarText>
+  
+    <LeftBarText>
+    <div><h3>Item    <span>  25.156</span></h3></div></LeftBarText>
 <RightBarText>
 
-<SelectButton>
-      <label htmlFor="">Sort by</label>
-      <Autocomplete
-      disablePortal
-      options={top100Films}
-      sx={{ width: 255 ,height: 45}}
-      size='small'
-      renderInput={(params) => <TextField {...params} label="Select"  />}
-    />
-     </SelectButton>
-<DivBetween><Autocomplete
-      disablePortal
-      options={Numbers}
-      sx={{ width: 85 ,height: 45}}
-      size='small'
-      renderInput={(params) => <TextField {...params} label="60"  />}
-    /></DivBetween>
+
     <ClickButtons>
 <button onClick={handleHmenu}>
   <img src={HmenuIcon} alt="HmenuIcon" />

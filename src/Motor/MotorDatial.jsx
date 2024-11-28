@@ -17,7 +17,7 @@ import {DatailImg } from './MotorDatialStyle'
 import {DatailText} from './MotorDatialStyle'
 import {DatailId} from './MotorDatialStyle'
 import {DatailData} from './MotorDatialStyle'
-import TabPanel1 from './TabsMenu'
+import CustomTabPanel from './TabsMenu'
 
 
 const MotorDatial = () => {
@@ -92,7 +92,7 @@ All our vans are equipped with an electric step.
       <DatailContainer><img src={image6} alt="image6" /></DatailContainer> </DatailWrapper>
     
     </AllWrapper>
-    <TabPanel1/>
+    <CustomTabPanel/>
     
     </>
   )

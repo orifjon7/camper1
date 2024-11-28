@@ -1,54 +1,44 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import QuestionComponent from './TabsInformation/QuestionCom';
-import TabsInfo from './TabsInformation/TabsInfo';
-import FAQComponent from './TabsInformation/FAQCom';
-import ContactInfo from './TabsInformation/ContactInfo';
+import TabsInfo from './TabsInformation/TabsInfo'
+import { Typography } from '@mui/material';
+import QuestionComponent from './TabsInformation/QuestionCom'
+import FAQComponent from './TabsInformation/FAQCom'
+import ContactInfo from './TabsInformation/ContactInfo'
 
-
-export function TabPanel1(props) {
+export function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
     <div
       role="tabpanel"
       hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 4 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
 
-TabPanel1.propTypes = {
+CustomTabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.number.isRequired,
   value: PropTypes.number.isRequired,
 };
 
-
 function a11yProps(index) {
   return {
-    id: `full-width-tab-${index}`,
-    'aria-controls': `full-width-tabpanel-${index}`,
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
   };
 }
 
-
-export default function FullWidthTabs() {
-  const theme = useTheme();
+export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -56,36 +46,27 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-      <AppBar position="static">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="secondary"
-          textColor="inherit"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="Item reviews" {...a11yProps(0)} sx={{ width: 170, marginLeft: 4 }} />
-          <Tab label="Item Q&A" {...a11yProps(1)} sx={{ width: 170 }} />
-          <Tab label="Item FAQ" {...a11yProps(2)} sx={{ width: 170 }} />
-          <Tab label="Contact" {...a11yProps(3)} sx={{ width: 170 }} />
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)'  }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab style={{marginLeft:'34px'}} label="Item reviews" {...a11yProps(0)} />
+          <Tab label="Item Q&A" {...a11yProps(1)} />
+          <Tab label="Item FAQ" {...a11yProps(2)} />
+          <Tab label="Contact" {...a11yProps(3)} />
         </Tabs>
-      </AppBar>
-      
-    
-      <TabPanel1 value={value} index={0} dir={theme.direction}>
-        <Typography variant="h5"><TabsInfo/></Typography>
-      </TabPanel1>
-      <TabPanel1 value={value} index={1} dir={theme.direction}>
-        <Typography variant="h5"><QuestionComponent/></Typography>
-      </TabPanel1>
-      <TabPanel1 value={value} index={2} dir={theme.direction}>
-        <Typography variant="h5"><FAQComponent/></Typography>
-      </TabPanel1>
-      <TabPanel1 value={value} index={3} dir={theme.direction}>
-        <Typography variant="h5"><ContactInfo/></Typography>
-      </TabPanel1>
+      </Box>
+      <CustomTabPanel  value={value} index={0}>
+      <Typography variant="h5"><TabsInfo/></Typography>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={1}>
+      <Typography variant="h5"><QuestionComponent/></Typography>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      <Typography variant="h5"><FAQComponent/></Typography>
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={3}>
+      <Typography variant="h5"><ContactInfo/></Typography>
+      </CustomTabPanel>
     </Box>
   );
 }

@@ -12,18 +12,12 @@ import {MainFilter} from '../Motor/style'
 import {LeftBar} from '../Motor/style'
 import { LeftBarText } from '../Motor/style'
 import {RightBarText} from '../Motor/style'
-import {DivBetween} from '../Motor/style'
 import car1 from '../assests/Rectangle 705.svg'
 import car2 from '../assests/c a.svg'
 import car3 from '../assests/22 1.svg'
 import { Button } from '../Motor/style'
 import { CarWr } from '../Motor/style'
 import {ButtonLast} from '../Motor/style'
-import Autocomplete from '@mui/material/Autocomplete';
-import top100Films from '../Motor/top100Films';
-import TextField from '@mui/material/TextField';
-import { SelectButton } from '../Motor/style'
-import Numbers from '../Motor/Number'
 import{ClickButtons} from '../Motor/style'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -185,23 +179,6 @@ const UsedComponent = () => {
     <LeftBarText>
   <div><h3>Item    <span>  25.156</span></h3></div></LeftBarText>
   <RightBarText>
-  <SelectButton>
-      <label htmlFor="">Sort by</label>
-      <Autocomplete
-      disablePortal
-      options={top100Films}
-      sx={{ width: 255 ,height: 45}}
-      size='small'
-      renderInput={(params) => <TextField {...params} label="Select"  />}
-    />
-     </SelectButton>
-<DivBetween><Autocomplete
-      disablePortal
-      options={Numbers}
-      sx={{ width: 85 ,height: 45}}
-      size='small'
-      renderInput={(params) => <TextField {...params} label="60"  />}
-    /></DivBetween>
     <ClickButtons>
   <button onClick={handleHmenu}>
     <img src={HmenuIcon} alt="HmenuIcon" />

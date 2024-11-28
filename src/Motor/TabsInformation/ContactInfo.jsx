@@ -3,10 +3,13 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {QAwrapper} from '../TabsInfoStyle'
 import {AnswerWrapper} from '../TabsInfoStyle'
-import map from '../Motor Rasm/Screenshot_1 1.svg'
+
 import {MapInfo} from '../TabsInfoStyle'
 import {ContactWrapper} from '../TabsInfoStyle'
 import {InfoWrapper} from '../TabsInfoStyle'
+import TabsMap from '../../Kakao Map/TabsMap';
+
+
 const style1 = { 
     width: 390,
     height: 50,
@@ -33,7 +36,7 @@ const ContactInfo = () => {
       autoComplete="off"
     >
 <ContactWrapper>
-<img src={map} alt="map" />
+<TabsMap/>
 <InfoWrapper>
         <MapInfo>
         <p>Phone number: <br />
